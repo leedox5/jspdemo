@@ -14,7 +14,7 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("/hello")
-    public String helloJsp(@RequestParam String name,  Model model) {
+    public String helloJsp(@RequestParam(value = "name", required = false, defaultValue = "World") String name,  Model model) {
         model.addAttribute("name", name);
         return "Hello";
     }
