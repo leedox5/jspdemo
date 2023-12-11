@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.leedox.repository.ArtifactMapper">
+    <!--
+    <select id="getList" resultType="kr.leedox.dto.ArtifactDTO">
+        SELECT a.ArtifactID
+              ,a.Name
+              ,ap.Price
+              ,ap.Rarity
+          FROM Artifacts a
+              LEFT JOIN Appraisals ap
+               ON a.ArtifactID = ap.Artifact
+         WHERE a.Owner IS NULL
+    </select>
+    -->
+    <select id="getList" resultType="kr.leedox.dto.ArtifactDTO">
+        select 1 artifactId, 'ITEM001' name, 200000 price, 'A' rarity union
+        select 2 artifactId, 'ITEM002' name, 300000 price, 'B' rarity
+    </select>
+</mapper>
