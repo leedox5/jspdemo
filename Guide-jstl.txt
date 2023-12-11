@@ -1,0 +1,21 @@
+# JSTL(JSP Standard Tag Library)
+- JSP 확장 태그
+- 조건, 반복, formatting 등 처리
+
+# 사용하기
+- JSP 상단에 선언
+<%@ taglib uri="http://java.sun.com/sjp/jstl/core" prefix="c" %>
+
+# 주요 core 태그
+<c:set>
+<c:remove>
+<c:out>
+
+- 조건
+<c:if>
+
+- switch
+<c:choose>
+
+- 반복
+<c:forEach>
