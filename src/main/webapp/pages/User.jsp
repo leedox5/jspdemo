@@ -4,7 +4,7 @@
 <html lang="ko">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>View Test Page</title>
+<title>사용자 목록</title>
 </head>
 <body>
   <h2>사용자 목록</h2>
